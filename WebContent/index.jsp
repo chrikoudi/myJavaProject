@@ -25,14 +25,14 @@
 			<a class="navbar-brand" href="/myProject/index.jsp">WebSiteName</a>
 		</div>
 		<ul class="nav navbar-nav">
-			<form class="form-inline" method="post" action="/myProject/index.jsp">
+			<form class="form-inline" method="post" action="/myProject/vote.jsp">
 				<div class="form-group">
 					<label for="username">Username:</label> <input type="text"
-						class="form-control" id="username">
+						class="form-control" name="username">
 				</div>
 				<div class="form-group">
 					<label for="password">Password:</label> <input type="password"
-						class="form-control" id="password">
+						class="form-control" name="password">
 				</div>
 				<button type="submit" class="btn btn-success">Submit</button>
 			</form>
