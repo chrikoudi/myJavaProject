@@ -1,7 +1,25 @@
+*{
+	vertical-align: middle !important;
+}
+
 .fixHeight {
-	height: 83vh;
+	height: 81vh;
 }
 
 input {
 	margin: 0 2vh;
+}
+
+.centralized{
+	margin:0 auto;
+	padding-top: 10vh;
+}
+
+table {
+	height: 50vh;
+}
+
+.myForm {
+	height: 40vh;
+	padding: 20% 9%;
 }
