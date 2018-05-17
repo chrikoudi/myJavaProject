@@ -85,8 +85,7 @@
 				<div class="form-group">
 					<button type="submit" class="btn btn-success"
 						style="margin-top: 10%;">Confirm</button>
-					<button class="btn btn-danger" style="margin-top: 10%;"
-						onlick="clearText();">Cancel</button>
+					<button type="reset" class="btn btn-danger" style="margin-top: 10%;">Cancel</button>
 				</div>
 			</form>
 		</div>
@@ -105,11 +104,5 @@
 		</i>
 	</p>
 	</footer>
-
-	<script>
-		function clearText() {
-			document.getElementById("pollQuestion").value = "";
-		}
-	</script>
 </body>
 </html>
