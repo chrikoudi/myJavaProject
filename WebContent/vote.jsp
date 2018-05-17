@@ -64,11 +64,14 @@
 			Statement statement = conn.createStatement();
 			String getVote = "SELECT voted FROM participation WHERE username=\'"
 					+ username + "\';";
+				
+			
+		
+			
 			ResultSet vote = statement.executeQuery(getVote);
-
 			while (vote.next()) {
 				if (vote.getString(1) != null) {
-					out.print("<h1 align='center'>You have voted: "
+					out.print("<h1 align='center' style='padding-top:25vh;'>You have voted: "
 							+ vote.getString(1) + "</h1>");
 				} else {
 		%>
@@ -88,6 +91,16 @@
 						style="margin-left: 65%;">Vote</button>
 				</div>
 			</form>
+
+			<%
+			String userVote = request.getParameter("userVote");
+			String insertVote = "INSERT INTO participation(username, voted) VALUES (\'"
+					+ username + "\', \'" + userVote + "\';";
+					
+					if (userVote != null) {
+			ResultSet newVote = statement.executeQuery(insertVote);
+					}
+		%>
 		</div>
 
 		<%
